@@ -1,0 +1,767 @@
+
+.header{
+    margin-top: 100px;
+    background-color: black;
+    border-radius: 50px;
+    margin: 0px 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+   
+    
+}
+.navigation{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+}
+.header-image{
+    
+    position: relative;
+    width:200px;
+    height: 175px;
+    border-radius: 60px ;
+    left: 40px;
+    object-fit: cover;
+
+}
+li{
+   position: relative;
+   display:inline-block;    
+   justify-content:space-evenly;
+   padding: 0px 0px;
+   margin: 30px 0px;
+   left:30px;
+
+} 
+@media screen and (max-width:600px) {
+    li{
+        padding: 10px 50px  ;
+        margin: 0px;
+        
+    
+    }
+     
+}
+@media screen and (max-width:600px) {
+    body{
+     width: 100%;
+     text-align: center;
+    }
+}
+@media screen and (min-width:600px) {
+    li{
+        padding: 10px 30px  ;
+    }
+}
+ul 
+{
+    margin-top: 20px;
+}
+   
+.tag-a{
+    color: white ;
+    padding:px;
+    transform: 1s;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0px 10px;
+    font-style:italic;
+    text-decoration: none;
+    
+    
+}
+
+.tag-a:hover{
+    cursor: pointer;
+}
+.right{
+    flex-basis: 65%;
+    overflow:hidden;
+}
+
+.left{
+    flex-basis:35%;
+}
+.left-sub{
+    position: relative;
+    top:42px;
+}
+
+
+/*------about-----*/
+.about{
+    margin-top: 100px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.about-info{
+     flex-basis:60%;
+}
+.img {
+    border-radius: 60px;
+    height:225px;
+    width: 250px;
+    transition-duration: 0.5s;
+}
+  
+
+.img:hover{
+    transform: scaleX(0.9);
+    transition-duration: 0.5s;
+    box-shadow: 0px 0px 20px  red,0px 0px 20px  red,0px 0px 20px  red  ;
+}
+/*section-3*/
+.progress-bar{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    border-radius: 25px;
+    overflow: hidden;
+    gap:10px;
+}
+.left1 {
+    flex-basis: 55%;
+    height: 400px;
+    background-color: black;
+    border-radius:20px;
+    overflow: hidden;
+}
+.right1{
+    flex-basis:40%;
+    border-radius: 10px;
+    height: 270;
+}
+h4{
+    color:white;
+    position:relative;
+    padding-top: 10px;
+    left: 10px;
+    top:40px
+}
+.skills-adjust{
+    color:black;
+    position: relative;
+    left: 30px;
+    
+}
+.stable-movement{
+    position: relative;
+    left: 15px;
+    width: 80%;
+    height:6px;
+    background-color:white;
+    top: 20px;
+    
+    
+}
+
+.moving-1{
+    position: relative;
+    left: 0px;
+    width: 0%;
+    height:6px;
+    background-color:red;
+    animation: html 3s linear forwards;
+}
+.moving-2{
+    position: relative;
+    left: 0px;
+    width: 0%;
+    height:6px;
+    background-color:red;
+    animation: css 3s linear forwards;
+}
+.moving-3{
+    position: relative;
+    left: 0px;
+    width: 0%;
+    height:6px;
+    background-color:red;
+    animation: java 3s linear forwards;
+}
+
+
+/*-----per----*/
+.per-1{
+    color: white;
+    width:0%;
+    animation:html-1 3s linear forwards;
+    padding-left: 0%;
+}
+.per-2{
+    color: white;
+    width:0%;
+    animation:css-2 3s linear forwards;
+    padding-left: 0%;
+    
+}
+.per-3{
+    color: white;
+    width:0%;
+    animation:java-2 3s linear forwards;
+    padding-left: 0%;
+    
+}
+/*--------key frames for progress bar------*/
+@keyframes  html   {
+    0%{
+        width:0%;
+    }
+    16%{
+        width:16%;
+    }
+    32%{
+        width:32%;
+    }
+    48%{
+        width:48%;
+    }
+    64%{
+        width:70%;
+    }
+    80%{
+        width:70%;
+    
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes  css {
+    0%{
+        width:12%;
+    }
+    16%{
+        width:24%;
+    }
+    32%{
+        width:36%;
+    }
+    48%{
+        width:48%;
+    }
+    64%{
+        width:60%;
+    }
+    80%{
+        width:60%;
+    
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes  java {
+    0%{
+        width:4%;
+    }
+    16%{
+        width:8%;
+    }
+    32%{
+        width:12%;
+    }
+    48%{
+        width:16%;
+    }
+    64%{
+        width:20%;
+    }
+    80%{
+        width:20%;
+    
+    }
+    100%{
+        width: 20%;
+    }
+}
+/*-------key frames for percentage---*/
+@keyframes  html-1   {
+    0%{
+        padding-left:0%;
+    }
+    16%{
+        padding-left:16%;
+    }
+    32%{
+        padding-left:32%;
+    }
+    48%{
+        padding-left:48%;
+    }
+    64%{
+        padding-left:70%;
+    }
+    80%{
+        padding-left:70%;
+    
+    }
+    96%{
+        padding-left: 70%;
+    }
+    100%{
+        padding-left: 70%;
+    }
+}
+@keyframes  css-2 {
+    0%{
+        padding-left:12%;
+    }
+    16%{
+        padding-left:24%;
+    }
+    32%{
+        padding-left:36%;
+    }
+    48%{
+        padding-left:48%;
+    }
+    64%{
+        padding-left:60%;
+    }
+    80%{
+        padding-left:60%;
+    
+    }
+    100%{
+        padding-left: 60%;
+    }
+}
+@keyframes  java-2 {
+    0%{
+        padding-left:4%;
+    }
+    16%{
+        padding-left:8%;
+    }
+    32%{
+        padding-left:12%;
+    }
+    48%{
+        padding-left:16%;
+    }
+    64%{
+        padding-left:20%;
+    }
+    80%{
+        padding-left:20%;
+    
+    }
+    100%{
+        padding-left: 20%;
+    }
+}
+/*----right-section----*/
+.split-div{
+    
+    position: relative;
+    top:-20px;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:2px;
+}
+@media screen and (min-width:600px) {
+    .split-div{
+        flex-direction:column;
+        margin: 0px 30px;
+    }
+    .skills-adjust{
+        left: 200px;
+    }
+}
+.lan1::after{
+    flex-basis: 30%;
+    content: 'im basically good at html';
+    font-size: small;
+}
+.lan2::after{
+    flex-basis: 30%;
+    content:'Intermidate can create small animations ';
+    font-size: small;
+}
+.lan3::after{
+    flex-basis: 30%;
+    content:'just landed on java';
+    font-size: small;
+}
+/*----last section----*/
+.last-section{
+    margin: 0px -20px;
+    position: relative;
+    bottom: -50px;
+    
+}
+.svg-image{
+    position: relative;
+    top: 14px;
+} 
+
+/*-----connect-heading--*/
+.connect-heading{
+     position: relative;
+    bottom: 25px;
+}
+.connect-h4{
+    position: absolute;
+    left: 45%;
+    height: 20px;
+    width: fit-content;
+   color: black;
+   justify-content: center;
+   align-items: center;
+   font-family:"Skranji";
+}
+/*------social-media--connect---*/
+.connect{
+    margin-top: 100px;
+   flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    
+}
+.medias-1{
+    position: relative;
+    margin: 10px 0px;
+    flex-basis: 25%;
+    flex-wrap: 1;
+}
+.medias-2{
+    position: relative;
+    margin: 10px 0px;
+    flex-basis: 25%;
+    flex-grow: 1;
+}
+.medias-3{
+    position: relative;
+    margin: 10px 0px;
+    flex-basis: 25%;
+    flex-grow: 1;
+}
+.medias-4{
+    position: relative;
+    margin: 10px 0px;
+    flex-basis: 25%;
+    flex-grow: 1;
+}
+
+
+
+.media-1-sub{
+ position: relative;
+ flex-wrap: wrap;
+ height: 50px;
+ width:50%;
+ left:100px;
+ background-color: black;
+ border-radius: 20px;
+ 
+}
+.media-icons{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    height: 25px;
+
+}
+.media-a{
+    text-decoration: none;
+}
+.media-a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.media-p{
+    position:absolute;
+    top: 2px;
+    left: 50px;
+    color:white;
+}
+@media screen and (min-width:500px) {
+    .media-1-sub{
+        position: relative;
+        flex-wrap: wrap;
+        height: 50px;
+        width:35%;
+        left:150px;
+        background-color: black;
+        border-radius: 20px;
+        
+       }
+}
+@media screen and (min-width:600px) {
+    .media-1-sub{
+        position: relative;
+        flex-wrap: wrap;
+        height: 50px;
+        width:35%;
+        left:200px;
+        background-color: black;
+        border-radius: 20px;
+        
+       }
+
+       
+}
+@media screen and (min-width:700px) {
+    .media-1-sub{
+        position: relative;
+        flex-wrap: wrap;
+        height: 50px;
+        width:35%;
+        left:250px;
+        background-color: black;
+        border-radius: 20px;
+        
+       }
+
+       
+}
+@media screen and (min-width:800px) {
+    .media-1-sub{
+        position: relative;
+        flex-wrap: wrap;
+        height: 50px;
+        width:35%;
+        left:250px;
+        background-color: black;
+        border-radius: 20px;
+        
+       }
+
+       
+}
+@media screen and (min-width:900px) {
+    .media-1-sub{
+        position: relative;
+        flex-wrap: wrap;
+        height: 50px;
+        width:33%;
+        left:300px;
+        background-color: black;
+        border-radius: 20px;
+        
+       }
+
+       
+}
+@media screen and (min-width:1000px) {
+    .media-1-sub{
+        position: relative;
+        flex-wrap: wrap;
+        height: 50px;
+        width:30%;
+        left:400px;
+        background-color: black;
+        border-radius: 20px;
+        
+       }
+
+       
+}
+@media screen and (min-width:1100px) {
+    .media-1-sub{
+        position: relative;
+        flex-wrap: wrap;
+        height: 50px;
+        width:30%;
+        left:450px;
+        background-color: black;
+        border-radius: 20px;
+        
+       }
+
+       
+}
+@media screen and (min-width:1150px) {
+    .media-1-sub{
+        position: relative;
+        flex-wrap: wrap;
+        height: 50px;
+        width:30%;
+        left:500px;
+        background-color: black;
+        border-radius: 20px;
+        
+       }
+
+       
+}
+@media screen and (min-width:1200px) {
+    .media-1-sub{
+        position: relative;
+        flex-wrap: wrap;
+        height: 50px;
+        width:25%;
+        left:550px;
+        background-color: black;
+        border-radius: 20px;
+        
+       }
+
+       
+}
+@media screen and (min-width:1250px) {
+    .media-1-sub{
+        position: relative;
+        flex-wrap: wrap;
+        height: 50px;
+        width:25%;
+        left:600px;
+        background-color: black;
+        border-radius: 20px;
+        
+       }
+
+       
+}
+@media screen and (min-width:1300px) {
+    .media-1-sub{
+        position: relative;
+        flex-wrap: wrap;
+        height: 50px;
+        width:20%;
+        left:650px;
+        background-color: black;
+        border-radius: 20px;
+        
+       }
+
+       
+}
+@media screen and (min-width:1300px) {
+
+    .media-1-sub{
+        position: relative;
+        flex-wrap: wrap;
+        height: 50px;
+        width:17%;
+        left:700px;
+        background-color: black;
+        border-radius: 20px;
+        
+       }
+}
+@media screen and (min-width:1350px) {
+
+    .media-1-sub{
+        position: relative;
+        flex-wrap: wrap;
+        height: 50px;
+        width:16%;
+        left:750px;
+        background-color: black;
+        border-radius: 20px;
+        
+       }
+}
+@media screen and (min-width:1400px) {
+
+    .media-1-sub{
+        position: relative;
+        flex-wrap: wrap;
+        height: 50px;
+        width:15%;
+        left:750px;
+        background-color: black;
+        border-radius: 20px;
+        
+       }
+}
+@media screen and (min-width:1450px) {
+
+    .media-1-sub{
+        position: relative;
+        flex-wrap: wrap;
+        height: 50px;
+        width:15%;
+        left:800px;
+        background-color: black;
+        border-radius: 20px;
+        
+       }
+}
+@media screen and (min-width:1500px) {
+
+    .media-1-sub{
+        position: relative;
+        flex-wrap: wrap;
+        height: 50px;
+        width:14%;
+        left:800;
+        background-color: black;
+        border-radius: 20px;
+        
+       }
+}
+@media screen and (min-width:1500px) {
+
+    .media-1-sub{
+        position: relative;
+        flex-wrap: wrap;
+        height: 50px;
+        width:50%;
+        left:150px;
+        background-color: black;
+        border-radius: 20px;
+        
+       }
+       .connect{
+        margin-top: 100px;
+       flex-wrap: wrap;
+        display: flex;
+        flex-direction:row;
+        
+    }
+}
+
+/*---signature------*/
+
+.signature{
+    top:40px;
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
+}
+.sign-img{
+    position:absolute;
+    margin-top: 30px;
+    left: 73%;
+    height: 50px;
+    width: 100px;
+    mix-blend-mode: color-burn;
+}
+.signature-p{
+    position: absolute;
+    left: 42%;
+    font-weight: 400;
+    font-style: italic;
+    font-weight:500;
+}
+@media screen and (min-width:600px) {
+    .sign-img{
+        position:absolute;
+        margin-top: 35px;
+        left: 60%;
+        height: 50px;
+        width: 100px;
+        mix-blend-mode: color-burn;
+    }
+    
+}
+@media screen and (min-width:700px) {
+    .sign-img{
+        position:absolute;
+        margin-top: 35px;
+        left: 60%;
+        height: 50px;
+        width: 100px;
+        mix-blend-mode:color-burn;
+        visibility:hidden;
+    }
+    
+}
